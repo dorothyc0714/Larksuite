@@ -37,7 +37,7 @@ export default function App() {
     <div className="min-h-screen bg-white text-neutral-900">
       <header className="sticky top-0 z-10 border-b border-neutral-200 bg-white/80 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3">
-          <div className="text-sm font-semibold">Marketing Site</div>
+          <div className="text-sm font-semibold">Dorothy's Larksuite</div>
 
           <div className="flex items-center gap-2">
             <span className="text-xs text-neutral-500">{langLabel}</span>
