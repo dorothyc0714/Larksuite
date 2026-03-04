@@ -9,5 +9,11 @@
       "trust1Rating": "4.9",
       "trust2Label": "Users love us",
       "cta": "Watch demo"
+    },
+
+    "referral": {
+      "eyebrow": "Become a Lark Ambassador today",
+      "title": "Start earning big\nwith Lark!",
+      "cta": "Learn more"
     }
   }

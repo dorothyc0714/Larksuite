@@ -1,12 +1,13 @@
 import { useEffect, useMemo, useState } from "react";
 import type { Lang } from "./i18n";
-import { Home } from "./pages/Home";
+import Home from "./pages/Home";
 
 function getLangFromHash(): Lang {
-  // 支持 #/en 或 #/vn
   const hash = window.location.hash || "";
   const seg = hash.replace("#", "").split("/")[1];
-  return seg === "vn" ? "vn" : "en";
+
+  const supported: Lang[] = ["en", "vn", "ja", "id", "pt"];
+  return (supported as string[]).includes(seg) ? (seg as Lang) : "en";
 }
 
 function setLangToHash(lang: Lang) {
@@ -48,6 +49,9 @@ export default function App() {
             >
               <option value="en">English</option>
               <option value="vn">Tiếng Việt</option>
+              <option value="ja">日本語</option>
+              <option value="id">Bahasa Indonesia</option>
+              <option value="pt">Português</option>
             </select>
           </div>
         </div>

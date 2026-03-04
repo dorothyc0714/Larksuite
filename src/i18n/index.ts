@@ -1,9 +1,18 @@
 import en from "./en.json";
 import vn from "./vn.json";
+import ja from "./ja.json";
+import id from "./id.json";
+import pt from "./pt.json";
 
-export type Lang = "en" | "vn";
+export type Lang = "en" | "vn" | "ja" | "id" | "pt";
 
-const DICT: Record<Lang, any> = { en, vn };
+const DICT = {
+  en,
+  vn,
+  ja,
+  id,
+  pt,
+};
 
 export function t(lang: Lang, key: string): string {
   const parts = key.split(".");
