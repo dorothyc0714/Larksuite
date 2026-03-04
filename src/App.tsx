@@ -22,6 +22,8 @@ export default function App() {
 
   // 监听地址栏变化（手动改 hash / 前进后退）
   useEffect(() => {
+    document.title = "Dorothy's Larksuite";
+
     const onHashChange = () => setLang(getLangFromHash());
     window.addEventListener("hashchange", onHashChange);
 
@@ -43,16 +45,16 @@ export default function App() {
           <div className="flex items-center gap-2">
             <span className="text-xs text-neutral-500">{langLabel}</span>
             <select
-              className="rounded-md border border-neutral-300 px-3 py-1.5 text-sm"
-              value={lang}
-              onChange={(e) => setLangToHash(e.target.value as Lang)}
-            >
-              <option value="en">English</option>
-              <option value="vn">Tiếng Việt</option>
-              <option value="ja">日本語</option>
-              <option value="id">Bahasa Indonesia</option>
-              <option value="pt">Português</option>
-            </select>
+            className="rounded-md border border-neutral-300 px-3 py-1.5 text-sm"
+            value={lang}
+            onChange={(e) => setLangToHash(e.target.value as Lang)}
+          >
+            <option value="en">🇺🇸 English</option>
+            <option value="vn">🇻🇳 Tiếng Việt</option>
+            <option value="ja">🇯🇵 日本語</option>
+            <option value="id">🇮🇩 Bahasa Indonesia</option>
+            <option value="pt">🇧🇷 Português</option>
+          </select>
           </div>
         </div>
       </header>
