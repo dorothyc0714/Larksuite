@@ -1,6 +1,6 @@
 import { Navigate, Route, Routes, useParams } from "react-router-dom";
 import type { Lang } from "../i18n";
-import { Home } from "./Home";
+import Home from "./Home";
 
 function LangHome() {
   const params = useParams();

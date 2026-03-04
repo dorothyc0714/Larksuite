@@ -18,7 +18,6 @@ export default function ReferralBanner({
 
   const eyebrow = t(lang, "referral.eyebrow");
   const title = t(lang, "referral.title");
-  const cta = t(lang, "referral.cta");
   const titleLines = title.split("\n");
 
   return (
